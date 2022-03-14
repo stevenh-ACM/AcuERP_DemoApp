@@ -1,0 +1,54 @@
+﻿@page "{id:int}"
+@model editModel
+@addTagHelper *, Microsoft.AspNetCore.Mvc.TagHelpers
+@{
+        ViewData["Title"] = "Edit Connection page";
+}
+<h1>@ViewData["Title"]</h1>
+
+<h3>Edit Acumatica Connection with user name: @Model.acuCredential.userName</h3>
+<form method="post">
+
+    <div>
+        <label asp-for="acuCredential.siteUrl"></label>
+        <div>
+            <input asp-for="acuCredential.siteUrl" />
+            <span asp-validation-for="acuCredential.siteUrl" class="text-danger"></span>
+        </div>
+
+        <label asp-for="acuCredential.userName"></label>
+        <div>
+            <input asp-for="acuCredential.userName" />
+            <span asp-validation-for="acuCredential.userName" class="text-danger"></span>
+        </div>
+
+        <label asp-for="acuCredential.password"></label>
+        <div>
+            <input asp-for="acuCredential.password" />
+            <span asp-validation-for="acuCredential.password" class="text-danger"></span>
+        </div>
+
+        <label asp-for="acuCredential.tenant"></label>
+        <div>
+            <input asp-for="acuCredential.tenant" />
+            <span asp-validation-for="acuCredential.tenant" class="text-danger"></span>
+        </div>
+
+        <label asp-for="acuCredential.branch"></label>
+        <div>
+            <input asp-for="acuCredential.branch" />
+            <span asp-validation-for="acuCredential.branch" class="text-danger"></span>
+        </div>
+
+        <label asp-for="acuCredential.locale"></label>
+        <div>
+            <input asp-for="acuCredential.locale" />
+            <span asp-validation-for="acuCredential.locale" class="text-danger"></span>
+        </div>
+    </div>
+
+    <div>
+        <button type="submit">Save</button>
+    </div>
+</form>
+

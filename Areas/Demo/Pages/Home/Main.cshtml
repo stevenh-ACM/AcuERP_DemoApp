@@ -1,0 +1,60 @@
+﻿@page
+@model MainModel
+@{
+        ViewData["Title"] = "Main";
+}
+ <div class="container-fluid shadow px-2 mb-5">    
+     <div class="row">
+         <div class="card bg-light">
+            <img class="card-img" src="../images/bg_homepage.jpg") style="height:auto"/> 
+            <div class="card-body card-img-overlay">             
+                <h1 class="card-title">Demo Main Page</h1>
+                <p class="card-text text-break">Acumatica ERP information required to start. <br />Select the Demo you wish to perfrom...</p>
+                <p class="card-footer bg-transparent border-0"><a class="btn btn-primary btn-lg" asp-area="Demo" asp-page=/Home/Setup>Initial Demo Setup &raquo;</a></p>
+
+            </div>
+        </div>
+    </div>
+</div>
+<br/>
+<div class="row row-cols-1 row-cols-md-2 g-4">
+    <div class="col">
+        <div class="card h-100">        
+            <div class="card-body">
+                <h3 class=card-title>Create a Sales Order</h3>
+                <p class="card-text">The following demo shows how to create a sales order using ReST Open APIs.</p>
+                <p class="card-footer bg-transparent border-0"><a class="btn btn-primary btn-lg" asp-route-id="1" asp-area="Demo" asp-page=/SalesOrders/Details>Get Sales Orders &raquo;</a></p>
+            </div>
+        </div>
+    </div>  
+    
+    <div class="col">
+        <div class="card h-100">            
+            <div class="card-body ">
+                <h3 class=card-title>Create a Contact</h3>
+                <p class="card-text">The following demo shows how to create a contact using ReST Open APIs.</p>
+                <p class="card-footer bg-transparent border-0"><a class="btn btn-primary btn-lg" asp-route-id="1" asp-area="Demo" asp-page="/Contacts/Details">Get Contacts &raquo;</a></p>
+            </div>
+        </div>
+    </div>
+
+    <div class="col">
+        <div class="card h-100">            
+            <div class="card-body">
+                <h3 class=card-title>Create an Oppotunity</h3>
+                <p class="card-text">The following demo shows how to create an opportunity using ReST Open APIs.</p>
+                <p class="card-footer bg-transparent border-0"><a class="btn btn-primary btn-lg" asp-route-id="1" asp-area="Demo" asp-page="/Opportunities/Details">Get Opportunities &raquo;</a></p>
+            </div>
+        </div>   
+    </div>
+
+    <div class="col">
+        <div class="card h-100">        
+            <div class="card-body">
+                <h3 class=card-title>Create a Case</h3>
+                <p class="card-text">The following demo shows how to create a case using ReST Open APIs.</p>
+                <p class="card-footer bg-transparent border-0"><a class="btn btn-primary btn-lg" asp-route-id="1" asp-area="Demo" asp-page="/Cases/Details">Get Cases &raquo;</a></p>
+            </div>
+        </div>
+    </div>
+</div>
